@@ -13,6 +13,8 @@
 		7B2E362319F32D3500347552 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B2E362219F32D3500347552 /* Images.xcassets */; };
 		7B2E362619F32D3500347552 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B2E362419F32D3500347552 /* LaunchScreen.xib */; };
 		7B2E363219F32D3500347552 /* CarouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E363119F32D3500347552 /* CarouselTests.swift */; };
+		7B2E363C19F330F000347552 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E363B19F330F000347552 /* IntroViewController.swift */; };
+		7B2E363E19F335CF00347552 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E363D19F335CF00347552 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		7B2E362B19F32D3500347552 /* CarouselTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarouselTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B2E363019F32D3500347552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B2E363119F32D3500347552 /* CarouselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTests.swift; sourceTree = "<group>"; };
+		7B2E363B19F330F000347552 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		7B2E363D19F335CF00347552 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				7B2E361B19F32D3500347552 /* AppDelegate.swift */,
 				7B2E361D19F32D3500347552 /* ViewController.swift */,
 				7B2E361F19F32D3500347552 /* Main.storyboard */,
+				7B2E363D19F335CF00347552 /* SignInViewController.swift */,
+				7B2E363B19F330F000347552 /* IntroViewController.swift */,
 				7B2E362219F32D3500347552 /* Images.xcassets */,
 				7B2E362419F32D3500347552 /* LaunchScreen.xib */,
 				7B2E361919F32D3500347552 /* Supporting Files */,
@@ -212,6 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B2E363E19F335CF00347552 /* SignInViewController.swift in Sources */,
+				7B2E363C19F330F000347552 /* IntroViewController.swift in Sources */,
 				7B2E361E19F32D3500347552 /* ViewController.swift in Sources */,
 				7B2E361C19F32D3500347552 /* AppDelegate.swift in Sources */,
 			);
