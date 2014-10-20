@@ -10,11 +10,17 @@ import UIKit
 
 class SignInViewController: UIViewController {
 
-    @IBOutlet weak var signInImage: UIImageView!
+    @IBOutlet weak var signInView: UIImageView!
+    
+    var signInViewCenterY: CGFloat!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+        
+        signInViewCenterY = signInView.center.y
 
         // Do any additional setup after loading the view.
     }
@@ -24,18 +30,16 @@ class SignInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func onBackButton(sender: AnyObject) {
-        navigationController?.popViewControllerAnimated(true)
-    }
-    
     func keyboardWillShow(notification: NSNotification!) {
-        
+        self.signInView.center.y = self.signInViewCenterY - 200
         
     }
     
     func keyboardWillHide(notification: NSNotification!) {
+        self.signInView.center.y = self.signInViewCenterY + 200
         
     }
+    
 
     /*
     // MARK: - Navigation
